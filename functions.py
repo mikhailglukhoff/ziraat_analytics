@@ -112,14 +112,14 @@ def median_outcome(df):
 
 
 def month_stats(df):
-    desired_year = None
-    desired_month = None
+    # desired_year = None
+    # desired_month = None
 
-    while desired_year is None or not (2000 <= desired_year <= 2099):
-        try:
-            desired_year = int(input('input a year: '))
-        except ValueError:
-            print("Пожалуйста, введите год в виде числа.")
+
+    try:
+        desired_year = int(input('input a year: '))
+    except ValueError:
+        print("Пожалуйста, введите год в виде числа.")
 
     while desired_month is None or not (1 <= desired_month <= 12):
         try:
